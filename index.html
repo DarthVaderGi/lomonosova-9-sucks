@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lomonosova 9 · ITMO University · The site is still up for debate</title>
+<meta name="description" content="Lomonosova Sucks: a public record of our proposal for ITMO University's heritage building at Lomonosova Street 9, Saint Petersburg.">
+<meta name="theme-color" content="#ece5d6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=PT+Sans+Narrow:wght@400;700&family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="brickP" width="40" height="16" patternUnits="userSpaceOnUse">
+      <rect width="40" height="16" fill="#9d4630"/>
+      <rect width="20" height="8" fill="#a64d33"/>
+      <rect x="20" width="20" height="8" fill="#98432d"/>
+      <rect x="10" y="8" width="20" height="8" fill="#a14831"/>
+      <path d="M0 .5H40M0 8.5H40M0 0V8M20 0V8M10 8V16M30 8V16" stroke="#cdbd9f" stroke-width=".9" fill="none"/>
+    </pattern>
+    <pattern id="rustP" width="72" height="26" patternUnits="userSpaceOnUse">
+      <rect width="72" height="26" fill="#d3c7aa"/>
+      <path d="M0 .5H72M0 13.5H72M0 0V13M36 0V13M18 13V26M54 13V26" stroke="#a09070" stroke-width="1.4" fill="none"/>
+      <path d="M0 2H72M0 15H72" stroke="#e7dcc3" stroke-width="1.2" fill="none"/>
+    </pattern>
+    <pattern id="dentP" width="14" height="8" patternUnits="userSpaceOnUse">
+      <rect width="14" height="8" fill="#e6dcc4"/>
+      <rect x="2" width="7" height="8" fill="#bfb293"/>
+    </pattern>
+    <pattern id="balP" width="16" height="18" patternUnits="userSpaceOnUse">
+      <rect width="16" height="18" fill="#e0d5ba"/>
+      <rect x="5" y="2" width="6" height="14" fill="#bdb090"/>
+    </pattern>
+    <pattern id="paveP" width="46" height="16" patternUnits="userSpaceOnUse">
+      <rect width="46" height="16" fill="#b9ae96"/>
+      <path d="M0 .5H46M23 0V16" stroke="#9c917a" stroke-width="1" fill="none"/>
+    </pattern>
+    <pattern id="meshP" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 0L12 12M12 0L0 12" stroke="#3b3b3b" stroke-width="1" fill="none"/>
+    </pattern>
+    <pattern id="hazP" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="30" height="30" fill="#f0b81c"/>
+      <rect x="15" width="15" height="30" fill="#1c1916"/>
+    </pattern>
+    <pattern id="woodP" width="16" height="7" patternUnits="userSpaceOnUse">
+      <rect width="16" height="7" fill="#8f6e43"/>
+      <path d="M0 .5H16M8 0V7" stroke="#5e4529" stroke-width="1" fill="none"/>
+      <path d="M2 4H6M10 2H14" stroke="#a5835a" stroke-width="1" fill="none"/>
+    </pattern>
+    <pattern id="concP" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#8ea0aa"/>
+      <circle cx="3" cy="3" r=".8" fill="#74878f"/>
+      <circle cx="9" cy="8" r=".8" fill="#a3b4bd"/>
+    </pattern>
+    <pattern id="tarpP" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(20)">
+      <rect width="22" height="22" fill="#4f7391"/>
+      <path d="M0 0H22" stroke="#3c5a73" stroke-width="2"/>
+    </pattern>
+    <filter id="blurS" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <linearGradient id="glassG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d6e9f0"/>
+      <stop offset="1" stop-color="#8db6c6"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#timeline" class="plate" aria-label="Lomonosova 9, home"><span>Ул. Ломоносова</span><b>9</b></a>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="#timeline">Timeline</a>
+      <a href="#stress">Stress test</a>
+      <a href="#after">After</a>
+      <a href="#debate">Debate</a>
+      <a href="#budget">Budget</a>
+      <a href="#team">Team</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="timeline">
+  <div class="wrap">
+    <div class="hero-top">
+      <h1>Lomonosova&nbsp;9</h1>
+      <div class="hero-side">
+        <p class="mono">Университет ИТМО<br>Санкт-Петербург</p>
+        <p class="ask">Safety or authenticity?<br><i>Still up for debate.</i></p>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet-art" id="heroArt"></div>
+      <div class="sheet-meta">
+        <span>Sheet 01</span>
+        <span>Street facade, ul. Lomonosova 9</span>
+        <span>Illustration, not to scale</span>
+      </div>
+    </div>
+
+    <div class="scrub" id="scrub" role="group" aria-label="Timeline">
+      <button type="button" data-s="0" class="on"><b>1871</b><span>Built</span></button>
+      <button type="button" data-s="1"><b>16.02.2019</b><span>Collapse</span></button>
+      <button type="button" data-s="2"><b>Today</b><span>Standoff</span></button>
+      <button type="button" data-s="3"><b>After</b><span>Our proposal</span></button>
+    </div>
+    <div class="cap-row">
+      <p class="cap" id="heroCap" aria-live="polite"></p>
+      <button class="btn" id="play" type="button">Replay ▸</button>
+    </div>
+
+    <dl class="idcard">
+      <div><dt>Built</dt><dd>1869–1871</dd></div>
+      <div><dt>Architect</dt><dd>Mikhail Makarov</dd></div>
+      <div><dt>Style</dt><dd>Neo-Renaissance</dd></div>
+      <div><dt>Was</dt><dd>Commercial School</dd></div>
+      <div><dt>Status</dt><dd>Regional heritage site</dd></div>
+      <div><dt>Owner</dt><dd>ITMO University</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sec dark" id="stress">
+  <div class="hz" aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="head">
+      <span class="no">№ 02</span>
+      <h2>Load the&nbsp;floors.</h2>
+      <p>Same load, two interiors. Drag, or hit overload.</p>
+    </header>
+
+    <div class="ctrl">
+      <label for="load" class="mono">Load</label>
+      <input type="range" id="load" min="0" max="100" value="0" aria-label="Load on the floors">
+      <output id="loadOut" for="load">0%</output>
+      <button class="btn hz-btn" id="over" type="button">Overload</button>
+      <button class="btn line" id="loadReset" type="button">Reset</button>
+    </div>
+
+    <div class="panels">
+      <figure class="panel old">
+        <figcaption class="p-head"><span>Existing interior</span><b class="chip ok" id="oldStatus">Holding</b></figcaption>
+        <div class="p-stage" id="oldStage"></div>
+        <p class="p-cap" id="oldCap">Tap a marker.</p>
+      </figure>
+      <figure class="panel new">
+        <figcaption class="p-head"><span>New interior, same facade</span><b class="chip ok" id="newStatus">Holding</b></figcaption>
+        <div class="p-stage" id="newStage"></div>
+        <p class="p-cap" id="newCap">Tap a marker.</p>
+      </figure>
+    </div>
+    <p class="fine">An illustration of our argument, not an engineering calculation. Inspection reports are still to be verified.</p>
+  </div>
+</section>
+
+<section class="sec" id="after">
+  <div class="wrap">
+    <header class="head">
+      <span class="no">№ 03</span>
+      <h2>Today, then <em>after.</em></h2>
+      <p>Drag the line. Tap the markers.</p>
+    </header>
+
+    <div class="wipe" id="wipe" style="--pos:50%">
+      <div class="wl wl-a" id="wipeA"></div>
+      <div class="wl wl-b" id="wipeB"></div>
+      <span class="wtag wta">Today</span>
+      <span class="wtag wtb">After</span>
+      <div class="wdiv"><span class="wgrip" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></span></div>
+    </div>
+    <label class="wrange" for="wr"><span>Today</span><input type="range" id="wr" min="0" max="100" value="50" aria-label="Compare today with after"><span>After</span></label>
+    <aside class="wcap" id="wcap" aria-live="polite"><b id="wcT">Pick a marker</b><span id="wcD">Each one is a thing that changes.</span></aside>
+  </div>
+</section>
+
+<section class="sec paper2" id="debate">
+  <div class="wrap">
+    <header class="head">
+      <span class="no">№ 04</span>
+      <h2>What weighs&nbsp;more?</h2>
+      <p>Slide the beam. Then pick our claims apart.</p>
+    </header>
+
+    <div class="balance">
+      <div class="bal-art" id="balArt"></div>
+      <input type="range" id="bal" min="-100" max="100" value="0" aria-label="Heritage versus safety">
+      <div class="bal-ends"><span>Authentic heritage</span><span>Guaranteed safety</span></div>
+      <p class="bal-out" id="balOut" aria-live="polite">Undecided. Drag the beam.</p>
+    </div>
+
+    <div class="moves-head">
+      <h3>Six moves. Agree or challenge.</h3>
+      <div class="filters" role="group" aria-label="Filter by evidence basis">
+        <button class="fl on" data-f="all" type="button">All</button>
+        <button class="fl" data-f="documented" type="button">Documented</button>
+        <button class="fl" data-f="inference" type="button">Inference</button>
+        <button class="fl" data-f="forecast" type="button">Forecast</button>
+      </div>
+    </div>
+
+    <div class="moves" id="movesList">
+
+      <article class="move" data-basis="documented" data-i="0">
+        <button class="move-h" type="button" aria-expanded="true">
+          <span class="num">1</span>
+          <span class="q">Where is the site, and what is actually happening there?</span>
+          <span class="tag t-doc">documented</span>
+          <span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="move-b"><div class="inner">
+          <p class="ans">The available records establish that ITMO University’s heritage campus at Lomonosova Street 9, Saint Petersburg partially collapsed in 2019 and is now caught in restoration talks and court appeals.</p>
+          <p class="ver"><b>To verify</b>The official cultural heritage status, legal protection boundaries, current permits, and court rulings on the project.</p>
+          <div class="rev">
+            <div class="rev-btns"><button type="button" data-s="agree">Agree</button><button type="button" data-s="challenge">Challenge</button></div>
+            <textarea rows="2" placeholder="Your evidence or objection" aria-label="Your note on move 1"></textarea>
+          </div>
+        </div></div>
+      </article>
+
+      <article class="move" data-basis="inference" data-i="1">
+        <button class="move-h" type="button" aria-expanded="false">
+          <span class="num">2</span>
+          <span class="q">Who stands to gain or lose?</span>
+          <span class="tag t-inf">inference</span>
+          <span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="move-b"><div class="inner">
+          <p class="ans">For residents and local heritage defenders (whose views we have not yet verified), preserving the authentic historical building intact is the main priority, whereas for the owner (ITMO University), students, and staff, guaranteed physical safety comes first.</p>
+          <p class="ver"><b>To verify</b>The real maximum capacity of the campus buildings, and documented opinions from students, staff, and local residents.</p>
+          <div class="rev">
+            <div class="rev-btns"><button type="button" data-s="agree">Agree</button><button type="button" data-s="challenge">Challenge</button></div>
+            <textarea rows="2" placeholder="Your evidence or objection" aria-label="Your note on move 2"></textarea>
+          </div>
+        </div></div>
+      </article>
+
+      <article class="move" data-basis="forecast" data-i="2">
+        <button class="move-h" type="button" aria-expanded="false">
+          <span class="num">3</span>
+          <span class="q">What do you propose, and what is the serious alternative?</span>
+          <span class="tag t-for">forecast</span>
+          <span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="move-b"><div class="inner">
+          <p class="ans">Although retaining the structure would preserve the original internal walls through adaptive reuse, we propose replacing the unsafe interior with a modern campus.</p>
+          <p class="ver"><b>To verify</b>Technical inspection reports on the wooden floors, load-bearing capacity, and the impossibility of safe restoration without full demolition.</p>
+          <div class="rev">
+            <div class="rev-btns"><button type="button" data-s="agree">Agree</button><button type="button" data-s="challenge">Challenge</button></div>
+            <textarea rows="2" placeholder="Your evidence or objection" aria-label="Your note on move 3"></textarea>
+          </div>
+        </div></div>
+      </article>
+
+      <article class="move" data-basis="forecast" data-i="3">
+        <button class="move-h" type="button" aria-expanded="false">
+          <span class="num">4</span>
+          <span class="q">What changes, and what might go wrong?</span>
+          <span class="tag t-for">forecast</span>
+          <span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="move-b"><div class="inner">
+          <p class="ans">This is likely to deliver a completely safe, modern educational building while keeping the historic street facade, provided that we mitigate temporary student displacement.</p>
+          <p class="ver"><b>To verify</b>Engineering calculations for facade retention, and the university’s capacity for temporary relocation of classes.</p>
+          <div class="rev">
+            <div class="rev-btns"><button type="button" data-s="agree">Agree</button><button type="button" data-s="challenge">Challenge</button></div>
+            <textarea rows="2" placeholder="Your evidence or objection" aria-label="Your note on move 4"></textarea>
+          </div>
+        </div></div>
+      </article>
+
+      <article class="move" data-basis="inference" data-i="4">
+        <button class="move-h" type="button" aria-expanded="false">
+          <span class="num">5</span>
+          <span class="q">What would it take to deliver?</span>
+          <span class="tag t-inf">inference</span>
+          <span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="move-b"><div class="inner">
+          <p class="ans"><b class="red">Strongest case against us.</b> Strict heritage protection law is a major constraint alongside ongoing court disputes.</p>
+          <p class="ans"><b class="grn">Our first step.</b> Commissioning an independent structural survey.</p>
+          <p class="ver"><b>To verify</b>KGIOP heritage regulations, court rulings, and the legal requirements for demolishing emergency structures behind a protected facade.</p>
+          <div class="rev">
+            <div class="rev-btns"><button type="button" data-s="agree">Agree</button><button type="button" data-s="challenge">Challenge</button></div>
+            <textarea rows="2" placeholder="Your evidence or objection" aria-label="Your note on move 5"></textarea>
+          </div>
+        </div></div>
+      </article>
+
+      <article class="move" data-basis="forecast" data-i="5">
+        <button class="move-h" type="button" aria-expanded="false">
+          <span class="num">6</span>
+          <span class="q">What will the website let the public do?</span>
+          <span class="tag t-for">forecast</span>
+          <span class="pm" aria-hidden="true"></span>
+        </button>
+        <div class="move-b"><div class="inner">
+          <p class="ans">Our website shows ITMO students, staff, and local citizens the structural inspection evidence and compares restoration with facade-preserved rebuilding.</p>
+          <p class="ver"><b>To verify</b>What project data is published for the public, and whether visitors understand our risk argument and can challenge it.</p>
+          <div class="rev">
+            <div class="rev-btns"><button type="button" data-s="agree">Agree</button><button type="button" data-s="challenge">Challenge</button></div>
+            <textarea rows="2" placeholder="Your evidence or objection" aria-label="Your note on move 6"></textarea>
+          </div>
+        </div></div>
+      </article>
+    </div>
+
+    <div class="notes">
+      <p id="revSum">No moves reviewed yet.</p>
+      <div class="notes-btns">
+        <button class="btn" id="dl" type="button">Download my notes</button>
+        <button class="btn line" id="reset" type="button">Clear</button>
+      </div>
+    </div>
+    <p class="fine dk">Your choices stay in this browser. A shared public tally needs a server this site does not have yet.</p>
+  </div>
+</section>
+
+<section class="sec blue" id="budget">
+  <div class="wrap">
+    <header class="head">
+      <span class="no">№ 05</span>
+      <h2>The bill.</h2>
+      <p>Assumptions dated October 2026. Push the contingency until funding runs out.</p>
+    </header>
+
+    <div class="bigsum">
+      <div>
+        <span class="mono">Year-one requirement</span>
+        <strong id="bigTot">0</strong>
+      </div>
+      <div class="gapbox" id="gapRow">
+        <span class="mono">Funding gap</span>
+        <strong id="sGap">0 ₽</strong>
+      </div>
+    </div>
+
+    <div class="stack" id="stack" role="img" aria-label="Share of each budget line"></div>
+    <div class="stack-legend" id="stackLegend"></div>
+
+    <div class="bud-grid">
+      <label class="slider" for="cont">
+        <span class="mono">Contingency <b id="cOut">20%</b></span>
+        <input type="range" id="cont" min="0" max="40" step="1" value="20">
+        <small id="cNote"></small>
+      </label>
+
+      <div class="sum">
+        <div class="r"><span>Base</span><b id="sBase"></b></div>
+        <div class="r"><span>Contingency <em id="cPct">20%</em></span><b id="sCont"></b></div>
+        <div class="r"><span>First-year operation</span><b id="sOps"></b></div>
+        <div class="r total"><span>Requirement</span><b id="sTot"></b></div>
+        <div class="r"><span>Funding</span><b id="sFund"></b></div>
+      </div>
+    </div>
+
+    <div class="meter" aria-hidden="true"><div class="meter-fill" id="meter"></div><span class="meter-mark" id="meterMark"></span></div>
+    <p class="meter-cap"><span>0</span><span id="meterCap"></span></p>
+
+    <details class="lines">
+      <summary>Line by line</summary>
+      <table class="tbl">
+        <thead><tr><th>Line</th><th>Qty</th><th>Rate</th><th>Amount</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </details>
+  </div>
+</section>
+
+<section class="sec" id="team">
+  <div class="wrap">
+    <header class="head">
+      <span class="no">№ 06</span>
+      <h2>Lomonosova&nbsp;<em>Sucks.</em></h2>
+      <p>For ITMO students and staff, local residents and heritage officials.</p>
+    </header>
+
+    <div class="team">
+      <article><span>Site researcher</span><h4>Alexandra Adrianovskaya</h4></article>
+      <article><span>Site researcher</span><h4>Daniil Raikhert</h4></article>
+      <article><span>Community researcher</span><h4>Anna Klochikhina</h4></article>
+      <article><span>Design strategist</span><h4>Daria Bolshakova</h4></article>
+      <article><span>Public engagement lead</span><h4>Alisa Korotkova</h4></article>
+    </div>
+
+    <details class="peer">
+      <summary><span>Peer review we gave</span><b>Idea 11/12</b><b>Pitch 9/10</b></summary>
+      <div class="peer-in">
+        <p class="peer-for mono">Daniil Raikhert on The Holy Trinity · Obvodny Canal embankment 74D</p>
+        <div class="peer-grid">
+          <div><span>Strong</span><p>The site has strong potential to become a unique public space because of its location near cultural venues and the Obvodny Canal.</p></div>
+          <div><span>Question</span><p>How can we ensure that the new tunnels, bridges and walking routes are safe, accessible and do not disturb local residents?</p></div>
+          <div><span>Revise</span><p>Add a public walking route with free access and include a preliminary feasibility and safety assessment before developing the tunnel concept.</p></div>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a href="#timeline" class="plate"><span>Ул. Ломоносова</span><b>9</b></a>
+    <p>It’s Not Bed ESP · Urban proposal record<br>Public URL: not done yet, but will be.</p>
+    <a href="#timeline" class="btn line light">Top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
